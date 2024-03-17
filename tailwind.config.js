@@ -5,7 +5,6 @@ export default {
     "./src/**/*.{js,vue}",
   ],
   options: {
-    safelist: [/^wsr-/]
   },
   theme: {
     extend: {
@@ -63,6 +62,5 @@ export default {
         'text-field': '480px',
       },
     },
-  },
-  prefix: 'wsr-',
+  }
 }
