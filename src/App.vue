@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-header></nav-header>
-    <router-view></router-view>
+    <router-view class="w-full min-h-screen pt-32 px-6 pb-8 bg-white dark:bg-gray-950"></router-view>
   </div>
 </template>
 

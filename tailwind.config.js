@@ -42,7 +42,7 @@ export default {
 
       fontFamily: {
         'unispace': ["Unispace", "Monaco", "sans-serif"],
-        'consolas': ["Consolas", "Monaco", "sans-serif"],
+        'inconsolata': ["Inconsolata", "Monaco", "sans-serif"],
       },
 
       screens: {

@@ -6,7 +6,7 @@
           :key="index"
           :route-config="routeConfig.path"
           :name="routeConfig.name.toString()"
-          :class="{ 'mt-2 md:mt-0 md:ml-4' : index > 0 }"
+          :class="{ 'mt-3 md:mt-0 md:ml-6' : index > 0 }"
       />
     </ul>
   </nav>

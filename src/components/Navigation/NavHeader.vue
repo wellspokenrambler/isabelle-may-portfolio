@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white bg-opacity-90 w-screen flex flex-col md:flex-row justify-between items-center px-8 py-6">
+  <header class="fixed shadow bg-purple w-screen flex flex-col md:flex-row justify-between items-center px-10 py-8">
     <div class="flex flex-row justify-between w-full md:w-auto md:justify-start items-end">
       <nav-menu class="hidden md:block mt-4 md:mt-0 md:ml-8"></nav-menu>
 
