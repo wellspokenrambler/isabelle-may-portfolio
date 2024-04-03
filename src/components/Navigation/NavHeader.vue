@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed shadow bg-purple w-screen flex flex-col md:flex-row justify-between items-center px-10 py-8">
+  <header class="z-50 fixed shadow bg-purple w-screen flex flex-col md:flex-row justify-between items-center px-10 py-8">
     <div class="flex flex-row justify-between w-full items-end">
       <nav-menu class="hidden md:block mt-4 md:mt-0 md:ml-8"></nav-menu>
 
@@ -21,7 +21,7 @@
       </svg>
 
       <a href="/Isabelle May CV 2024.pdf" target="_blank"
-        class="transition duration-100 flex items-end text-white hover:text-blue active:text-blue-dark-20 h-6 box-border hover:border-b-2 hover:border-blue active:border-blue-dark-20 leading-none"
+        class="transition duration-100 flex items-end text-white hover:text-blue active:text-blue-dark-20 -mb-2 border-b-2 border-transparent hover:border-blue active:border-blue-dark-20 leading-none"
         @mouseover="setHoverColor" @mouseleave="setDefaultColor" @mousedown="setActiveColor"
         @mouseup="setDefaultColor">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"

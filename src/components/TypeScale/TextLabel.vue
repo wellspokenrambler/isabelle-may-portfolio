@@ -1,5 +1,5 @@
 <template>
-    <label :for class="text-xs text-black dark:text-white">
+    <label :for class="font-inconsolata text-xs text-black dark:text-white">
       <slot></slot>
     </label>
   </template>

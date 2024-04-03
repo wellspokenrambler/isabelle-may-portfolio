@@ -1,7 +1,7 @@
 <template>
     <button @click="$emit('clicked')"
             :title="title"
-            class="p-2 text-white rounded-sm select-none box-border h-11 transition duration-100 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple"
+            class="p-2 text-white rounded-sm select-none font-inconsolata font-bold box-border h-11 transition duration-100 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple"
             :class="
             disabled ? 'pointer-events-none opacity-20' : ''">
       <slot></slot>
