@@ -7,4 +7,7 @@
 
 <script setup>
 import NavHeader from "./components/Navigation/NavHeader.vue"
+import { useRecaptchaProvider } from 'vue-recaptcha'
+
+useRecaptchaProvider()
 </script>

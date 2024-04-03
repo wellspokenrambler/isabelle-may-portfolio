@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@unhead/vue": "^1.9.4",
     "sass": "^1.71.1",
     "vite-plugin-vue-devtools": "^7.0.25",
     "vue": "^3.4.21",
+    "vue-recaptcha": "^3.0.0-alpha.6",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {

@@ -40,6 +40,11 @@ export default {
         }
       },
 
+      brightness: {
+        '60': '0.6',
+        '80': '0.8',
+      },
+
       fontFamily: {
         'unispace': ["Unispace", "Monaco", "sans-serif"],
         'inconsolata': ["Inconsolata", "Monaco", "sans-serif"],
