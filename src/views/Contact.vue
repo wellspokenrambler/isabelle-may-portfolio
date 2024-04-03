@@ -45,7 +45,7 @@
                     Thank you very much for getting in touch! I shall respond to your message as soon as I am able.
                 </Primary-Body-Copy>
 
-                <primary-button @clicked="router.push('/')" class="w-fit">
+                <primary-button @clicked="router.push('/')" class="w-fit mt-4">
                     Back to home
                 </primary-button>
             </div>
@@ -62,7 +62,7 @@
                     Sorry about that. Click the button below refresh the contact page and try again.
                 </Primary-Body-Copy>
 
-                <primary-button @clicked="window.location.reload()" class="w-fit">
+                <primary-button @clicked="window.location.reload()" class="w-fit mt-4">
                     Refresh the page
                 </primary-button>
             </div>
