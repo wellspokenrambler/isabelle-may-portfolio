@@ -42,7 +42,7 @@
                 </heading-two>
 
                 <Primary-Body-Copy class="mt-4">
-                    Thank you very much for getting in touch! I shall respond to your message as soon as I am able.
+                    Thank you very much for getting in touch! I shall respond to your message shortly.
                 </Primary-Body-Copy>
 
                 <primary-button @clicked="router.push('/')" class="w-fit mt-4">
