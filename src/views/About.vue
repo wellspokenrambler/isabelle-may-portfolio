@@ -19,7 +19,7 @@
                         Isabelle May grew up in Cornwall and has been analytically inclined from a young age. After completing a degree in Physics with Astrophysics, she discovered an interest in computer programming afterwards - and with that newfound passion, gained a 1st-class degree in Applied Computing Technologies. 
                         <br/>
                         <br/>
-                        She has 4.5+ years of experience in front-end web development and they possess a keen interest in how websites can be both functional and user-friendly, while also pushing the limits with aesthetic presentation. Isabelle is also passionate about web accessibility.
+                        She now has 4.5+ years of experience in front-end web development and possesses a keen interest in how websites can be both functional and user-friendly, while also pushing the limits with aesthetic presentation. Isabelle is also passionate about web accessibility.
                         <br/>
                         <br/>
                         Outside of development work she enjoys jogging and exercising, drawing and painting, and wildlife photography.
