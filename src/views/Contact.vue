@@ -1,6 +1,6 @@
 <template>
     <div class="w-full flex flex-col justify-center items-center">
-        <div
+        <div data-aos="fade-up" data-aos-once
             class="sm:relative w-full h-full sm:h-[726px] sm:max-w-96 flex flex-col items-center sm:px-8 sm:py-6 sm:rounded-lg sm:shadow-inner sm:dark:shadow-blue-opacity-16 sm:rounded-lg">
             <!-- initial contact page -->
             <div v-if="!emailSent && !error" class="w-full flex flex-col items-center">
@@ -75,6 +75,8 @@
 import { ref } from 'vue'
 import {useRouter} from 'vue-router'
 import emailjs from '@emailjs/browser'
+import AOS from "aos"
+AOS.init()
 
 //components
 import HeadingTwo from '../components/TypeScale/HeadingTwo.vue'
