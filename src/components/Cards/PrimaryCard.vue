@@ -4,7 +4,7 @@
         <div class="w-full flex flex-col items-center">
             <slot></slot>
         </div>
-        <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-blue opacity-40 dark:opacity-5 pointer-events-none -z-10"></div>
     </div>
 </template>
 

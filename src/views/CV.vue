@@ -3,7 +3,8 @@
         <primary-card data-aos="fade-up" data-aos-once>
             <heading-one>
                 Isabelle May - Front-End Web Developer
-                <br/>
+            </heading-one>
+            <heading-one class="mt-4">
                 Curriculum Vitae
             </heading-one>
         </primary-card>
@@ -84,7 +85,7 @@
                 Other Contributions
             </heading-four>
 
-            <ul class="list-disc text-white">
+            <ul class="list-disc text-white w-full ml-8">
                 <li>
                     <PrimaryBodyCopy class="mt-2">
                         Blogs (Edited Wordpress themes to match branding.)
@@ -111,7 +112,72 @@
             </ul>
         </primary-card>
 
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-two>
+                Skills
+            </heading-two>
+        </primary-card>
 
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <div class="flex flex-col justify-start items-center">
+                <icon :data="vite"></icon>
+                <PrimaryBodyCopy class="mt-2">
+                    CSS
+                </PrimaryBodyCopy>
+            </div>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-two>
+                Education
+            </heading-two>
+
+            <heading-four class="mt-6">
+                BSc Applied Computing Technologies, 1st Class
+            </heading-four>
+
+            <heading-six class="mt-2">
+                Truro and Penwith College, 2019
+            </heading-six>
+
+            <heading-four class="mt-4">
+                BSc Physics with Astrophysics, 3rd Class
+            </heading-four>
+
+            <heading-six class="mt-2">
+                University of Exeter, 2015
+            </heading-six>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-three>
+                Other Work Experience
+            </heading-three>
+
+            <heading-four class="mt-6">
+                HE Student Ambassador, Truro and Penwith College
+            </heading-four>
+
+            <heading-six class="mt-2">
+                (Feb 2018 - July 2019)
+            </heading-six>
+
+            <heading-four class="mt-4">
+                Kitchen Porter, Driftwood Spars
+            </heading-four>
+
+            <heading-six class="mt-2">
+                (October 2017 - February 2018)
+            </heading-six>
+
+            <heading-four class="mt-4">
+                Catering Assistant, Cuckoo Café
+            </heading-four>
+
+            <heading-six class="mt-2">
+                (June 2016 - February 2018)
+            </heading-six>
+        </primary-card>
 
     </div>
 </template>
@@ -128,6 +194,28 @@ import HeadingThree from "../components/TypeScale/HeadingThree.vue";
 import HeadingFour from "../components/TypeScale/HeadingFour.vue";
 import HeadingFive from "../components/TypeScale/HeadingFive.vue";
 import HeadingSix from "../components/TypeScale/HeadingSix.vue";
+
+import css from "../assets/svg/css5.svg"
+import html from "../assets/svg/html5.svg"
+import javascript from "../assets/svg/javascript.svg" 
+import npm from "../assets/svg/npm.svg" 
+import react from "../assets/svg/react.svg" 
+import sass from "../assets/svg/sass.svg"
+import tailwindcss from "../assets/svg/tailwindcss.svg" 
+import vite from "../assets/svg/vite.svg"
+import vue from "../assets/svg/vue.svg"
+
+const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vue",
+    "React",
+    "SASS",
+    "TailwindCSS",
+    "Vite",
+    "NPM"
+]
 
 AOS.init()
 
