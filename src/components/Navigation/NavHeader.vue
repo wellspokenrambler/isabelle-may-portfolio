@@ -1,6 +1,13 @@
 <template>
   <header class="z-50 fixed shadow bg-purple w-screen flex flex-col md:flex-row justify-between items-center px-10 py-8">
     <div class="flex flex-row justify-between w-full items-end">
+      <a href="/" class="transition duration-100 flex items-end text-white hover:text-blue active:text-blue-dark-20 -mb-2 border-b-2 border-transparent hover:border-blue active:border-blue-dark-20 leading-none" @mouseover="setHoverColor" @mouseleave="setDefaultColor" @mousedown="setActiveColor"
+        @mouseup="setDefaultColor">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6" stroke="currentColor">
+        <path stroke="strokeColor" stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+      </svg>
+      </a>
+
       <nav-menu class="hidden md:block mt-4 md:mt-0 md:ml-8"></nav-menu>
 
 
@@ -20,19 +27,7 @@
         <path stroke="white" stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
 
-      <a href="/Isabelle May CV 2024.pdf" target="_blank"
-        class="transition duration-100 flex items-end text-white hover:text-blue active:text-blue-dark-20 -mb-2 border-b-2 border-transparent hover:border-blue active:border-blue-dark-20 leading-none"
-        @mouseover="setHoverColor" @mouseleave="setDefaultColor" @mousedown="setActiveColor"
-        @mouseup="setDefaultColor">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="transition duration-100 w-6 h-6 mb-px">
-          <path stroke="strokeColor" stroke-linecap="round" stroke-linejoin="round"
-            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-        </svg>
-        <p class="ml-2 font-inconsolata font-bold text-center decoration-2 underline-offset-4 transition duration-200">
-          CV
-        </p>
-      </a>
+      <span class="hidden md:block w-6 h-6"></span>
     </div>
 
     <div class="mobile-menu" :class="menu ? 'mobile-menu-open' : 'mobile-menu-closed'">
