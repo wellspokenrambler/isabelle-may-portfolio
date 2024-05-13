@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
+import {ref} from "vue"
 import NavMenu from "./NavMenu.vue"
 
 let menu = ref(false)
