@@ -85,7 +85,7 @@
                 Other Contributions
             </heading-four>
 
-            <ul class="list-disc text-white w-full ml-8">
+            <ul class="list-disc text-white w-full ml-8 mt-4">
                 <li>
                     <PrimaryBodyCopy class="mt-2">
                         Blogs (Edited Wordpress themes to match branding.)
@@ -114,16 +114,19 @@
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
             <heading-two>
-                Skills
+                Main Languages & Frameworks
             </heading-two>
         </primary-card>
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
-            <div class="flex flex-col justify-start items-center">
-                <icon :data="vite"></icon>
-                <PrimaryBodyCopy class="mt-2">
-                    CSS
-                </PrimaryBodyCopy>
+            <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-4">
+                <div v-for="(skill, index) in skills" :key="index" class="flex flex-col justify-start items-center">
+                    <component class="hidden md:block" :is="skill.icon" width="128" height="128" original></component>
+                    <component class="md:hidden" :is="skill.icon" width="100" height="100" original></component>
+                    <HeadingFive class="mt-2">
+                        {{ skill.name }}
+                    </HeadingFive>
+                </div>
             </div>
         </primary-card>
 
@@ -150,35 +153,129 @@
         </primary-card>
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-two>
+                Other Languages
+            </heading-two>
+
+            <heading-three class="mt-6">
+                Front-End
+            </heading-three>
+
+            <ul class="list-disc text-white w-full ml-8 mt-4">
+                <li>
+                    <PrimaryBodyCopy>
+                        Alpine, jQuery, d3, DataTables, Wordpress, Laravel, Nuxt
+                    </PrimaryBodyCopy>
+                </li>
+            </ul>
+
+            <heading-three class="mt-6">
+                Misc.
+            </heading-three>
+
+            <ul class="list-disc text-white w-full ml-8 mt-4">
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        SQL, PHP, C++, C#, Shell scripting, Python
+                    </PrimaryBodyCopy>
+                </li>
+            </ul>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-two>
+                Soft Skills
+            </heading-two>
+
+            <ul class="list-disc text-white w-full ml-8 mt-4">
+                <li>
+                    <PrimaryBodyCopy>
+                        Problem-solving
+                    </PrimaryBodyCopy>
+                </li>
+
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        Communication inside and outside of team
+                    </PrimaryBodyCopy>
+                </li>
+
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        Self-direction
+                    </PrimaryBodyCopy>
+                </li>
+
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        Organisation
+                    </PrimaryBodyCopy>
+                </li>
+
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        Research
+                    </PrimaryBodyCopy>
+                </li>
+
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        Consideration towards professionalism and ethics
+                    </PrimaryBodyCopy>
+                </li>
+            </ul>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
             <heading-three>
                 Other Work Experience
             </heading-three>
 
-            <heading-four class="mt-6">
+            <heading-five class="mt-6">
                 HE Student Ambassador, Truro and Penwith College
-            </heading-four>
+            </heading-five>
 
-            <heading-six class="mt-2">
+            <PrimaryBodyCopy class="mt-2">
                 (Feb 2018 - July 2019)
-            </heading-six>
+            </PrimaryBodyCopy>
 
-            <heading-four class="mt-4">
+            <heading-five class="mt-4">
                 Kitchen Porter, Driftwood Spars
-            </heading-four>
+            </heading-five>
 
-            <heading-six class="mt-2">
+            <PrimaryBodyCopy class="mt-2">
                 (October 2017 - February 2018)
-            </heading-six>
+            </PrimaryBodyCopy>
 
-            <heading-four class="mt-4">
+            <heading-five class="mt-4">
                 Catering Assistant, Cuckoo Café
-            </heading-four>
+            </heading-five>
 
-            <heading-six class="mt-2">
+            <PrimaryBodyCopy class="mt-2">
                 (June 2016 - February 2018)
-            </heading-six>
+            </PrimaryBodyCopy>
         </primary-card>
 
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-two>
+                Hobbies
+            </heading-two>
+
+            <PrimaryBodyCopy class="mt-4">
+                I enjoy jogging and exercising, drawing and painting, wildlife photography - I also run and host a
+                Twitch stream twice a week (for which I designed all its assets and composed a short music instrumental
+                to play during breaks).
+
+            </PrimaryBodyCopy>
+        </primary-card>
+
+        <div class="fixed bottom-8 inset-x-0 flex justify-center items-center transition duration-100">
+            <a href="/Isabelle May CV 2024.pdf" target="_blank">
+                <primary-button class="m-x-auto">
+                    Download PDF
+                </primary-button>
+            </a>
+        </div>
     </div>
 </template>
 
@@ -186,6 +283,8 @@
 import AOS from "aos"
 
 import PrimaryCard from "../components/Cards/PrimaryCard.vue"
+
+import PrimaryButton from "../components/Buttons/PrimaryButton.vue"
 
 import PrimaryBodyCopy from '../components/TypeScale/PrimaryBodyCopy.vue'
 import HeadingOne from "../components/TypeScale/HeadingOne.vue";
@@ -195,30 +294,59 @@ import HeadingFour from "../components/TypeScale/HeadingFour.vue";
 import HeadingFive from "../components/TypeScale/HeadingFive.vue";
 import HeadingSix from "../components/TypeScale/HeadingSix.vue";
 
-import css from "../assets/svg/css5.svg"
-import html from "../assets/svg/html5.svg"
-import javascript from "../assets/svg/javascript.svg" 
-import npm from "../assets/svg/npm.svg" 
-import react from "../assets/svg/react.svg" 
-import sass from "../assets/svg/sass.svg"
-import tailwindcss from "../assets/svg/tailwindcss.svg" 
-import vite from "../assets/svg/vite.svg"
-import vue from "../assets/svg/vue.svg"
+import cssIcon from "../assets/svg/css.svg"
+import htmlIcon from "../assets/svg/html.svg"
+import javascriptIcon from "../assets/svg/javascript.svg"
+import npmIcon from "../assets/svg/npm.svg"
+import reactIcon from "../assets/svg/react.svg"
+import sassIcon from "../assets/svg/sass.svg"
+import tailwindcssIcon from "../assets/svg/tailwindcss.svg"
+import viteIcon from "../assets/svg/vite.svg"
+import vueIcon from "../assets/svg/vue.svg"
+
 
 const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Vue",
-    "React",
-    "SASS",
-    "TailwindCSS",
-    "Vite",
-    "NPM"
+    {
+        name: "HTML",
+        icon: htmlIcon,
+    },
+    {
+        name: "CSS",
+        icon: cssIcon,
+    },
+    {
+        name: "JavaScript",
+        icon: javascriptIcon,
+    },
+    {
+        name: "Vue",
+        icon: vueIcon,
+    },
+    {
+        name: "React",
+        icon: reactIcon,
+    },
+    {
+        name: "SASS",
+        icon: sassIcon,
+    },
+    {
+        name: "TailwindCSS",
+        icon: tailwindcssIcon,
+    },
+    {
+        name: "Vite",
+        icon: viteIcon,
+    },
+    {
+        name: "NPM",
+        icon: npmIcon,
+    }
 ]
 
 AOS.init()
 
 </script>
+
 
 <style scoped lang="scss"></style>
