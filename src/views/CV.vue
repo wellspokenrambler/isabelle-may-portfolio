@@ -10,9 +10,9 @@
         </primary-card>
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
-            <heading-three>
+            <heading-two>
                 About Me
-            </heading-three>
+            </heading-two>
             <PrimaryBodyCopy class="mt-4">
                 I am self-driven individual with over 4 years of experience in the field and a keen interest in how
                 websites can be both functional and user-friendly while maintaining a strong aesthetic
