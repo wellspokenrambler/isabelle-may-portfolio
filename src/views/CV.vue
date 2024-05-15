@@ -15,7 +15,7 @@
             </heading-three>
             <PrimaryBodyCopy class="mt-4">
                 I am self-driven individual with over 4 years of experience in the field and a keen interest in how
-                websites can be both functional and user-friendly while also pushing the limits with aesthetic
+                websites can be both functional and user-friendly while maintaining a strong aesthetic
                 presentation. I am also looking to expand my skills into full-stack development or to progress into
                 a senior front-end role.
             </PrimaryBodyCopy>
@@ -25,10 +25,8 @@
             <heading-two>
                 Work Experience
             </heading-two>
-        </primary-card>
 
-        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
-            <heading-three>
+            <heading-three class="mt-6">
                 Front End Developer, Vanellus Technologies Ltd
             </heading-three>
 
@@ -42,10 +40,8 @@
                 application to help users configure, run, and analyse fluid simulations on dedicated servers – all
                 contained within a clean UI which conforms to modern development standards and practices.
             </PrimaryBodyCopy>
-        </primary-card>
 
-        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
-            <heading-three>
+            <heading-three class="mt-6">
                 Front End Developer, RouteNote Ltd
             </heading-three>
 
@@ -116,10 +112,8 @@
             <heading-two>
                 Main Languages & Frameworks
             </heading-two>
-        </primary-card>
 
-        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
-            <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-4">
+            <div class="mt-6 w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-4">
                 <div v-for="(skill, index) in skills" :key="index" class="flex flex-col justify-start items-center">
                     <component class="hidden md:block" :is="skill.icon" width="128" height="128" original></component>
                     <component class="md:hidden" :is="skill.icon" width="100" height="100" original></component>
@@ -269,12 +263,16 @@
             </PrimaryBodyCopy>
         </primary-card>
 
-        <div class="fixed bottom-8 inset-x-0 flex justify-center items-center transition duration-100">
-            <a href="/Isabelle May CV 2024.pdf" target="_blank">
-                <primary-button class="m-x-auto">
-                    Download PDF
-                </primary-button>
-            </a>
+        <span class="w-full mt-6 h-32 md:hidden"></span>
+        <div
+            class="fixed bottom-8 inset-x-0 flex justify-center md:justify-end items-center transition duration-100 md:px-8">
+                <a href="/Isabelle May CV 2024.pdf" target="_blank"
+                    class="z-10 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple text-white w-24 h-24 rounded-full flex flex-col justify-center items-center transition duration-100 hover:-translate-y-1">
+                    <heading-four>
+                        PDF
+                    </heading-four>
+                    <downloadIcon width="24" height="24" color="#FFFFFF" :fill="false" />
+                </a>
         </div>
     </div>
 </template>
@@ -283,8 +281,6 @@
 import AOS from "aos"
 
 import PrimaryCard from "../components/Cards/PrimaryCard.vue"
-
-import PrimaryButton from "../components/Buttons/PrimaryButton.vue"
 
 import PrimaryBodyCopy from '../components/TypeScale/PrimaryBodyCopy.vue'
 import HeadingOne from "../components/TypeScale/HeadingOne.vue";
@@ -304,6 +300,7 @@ import tailwindcssIcon from "../assets/svg/tailwindcss.svg"
 import viteIcon from "../assets/svg/vite.svg"
 import vueIcon from "../assets/svg/vue.svg"
 
+import downloadIcon from "../assets/svg/download.svg"
 
 const skills = [
     {
