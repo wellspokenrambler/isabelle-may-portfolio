@@ -11,7 +11,28 @@
             <div class="w-full flex flex-col items-center">
                 <heading-three>2D Navier-Stokes Demo</heading-three>
 
-                <PrimaryBodyCopy class="mt-4"></PrimaryBodyCopy>
+                <div class="w-full rounded-lg overflow-hidden mt-6">
+                    <video autoplay playsinline loop muted preload="auto">
+                        <source src="/vanellus-2D-navier-stokes-demo.mov">
+                    </video>
+                </div>
+
+                <PrimaryBodyCopy class="mt-4">
+                    A web-page I built while working at Vanellus Technologies Ltd, who specialised 
+                    in machine-learning-aided complex fluid dynamics, to demonstrate their simulation 
+                    of a lid-driven cavity flow.
+                    <br/> 
+                    <br/> 
+                    It was designed to accept values for the number of 
+                    cells on the X and Y axis, the Reynolds number, and the length of time that the
+                    simulation should run for. Then, it would send these values to a server programmed 
+                    in Python which calculated the vorticity of each cell based on the given values - 
+                    iterating over the specified time - then returned multidimensional arrays of data which 
+                    were used by the front-end to generate a series of time-stepped vorticity plots.
+                    <br/> 
+                    <br/> 
+                    Front-end tech stack: Vue 3, SASS, Tailwind CSS, Vite
+                </PrimaryBodyCopy>
             </div>
             <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
         </div>
