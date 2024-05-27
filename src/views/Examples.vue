@@ -1,12 +1,12 @@
 <template>
     <div class="w-full flex flex-col justify-start items-center">
-        <primary-card data-aos="fade-down" data-aos-once>
+        <primary-card data-aos="fade-down" data-aos-once class="mt-8">
             <heading-two>
                 Examples
             </heading-two>
         </primary-card>
 
-        <primary-card data-aos="fade-down" data-aos-once>
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
             <heading-three>2D Navier-Stokes Demo</heading-three>
 
             <PrimaryBodyCopy class="mt-4">
@@ -31,32 +31,95 @@
                 - Laurence Cullen, CEO Vanellus Technologies Ltd
             </HeadingFive>
 
-            <Carousel class="mt-4" :cards-prop="vanellus"></Carousel>
+            <Carousel class="mt-6" :cards-prop="vanellus"></Carousel>
 
             <PrimaryBodyCopy class="w-full mt-4">
-                Front-end tech stack: Vue 3, SASS, Tailwind CSS, Vite
+                Front-end tech stack: Vue.js 3, SASS, Tailwind CSS, Vite
             </PrimaryBodyCopy>
         </primary-card>
 
-        <div data-aos="fade-up" data-aos-delay="200" data-aos-once
-            class="sm:relative w-full max-w-5xl flex flex-col items-center sm:px-8 sm:py-6 sm:rounded-lg sm:shadow-inner sm:dark:shadow-blue-opacity-16 sm:rounded-lg mt-6">
-            <div class="w-full flex flex-col items-center">
-                <heading-three>RouteNote Brochure Site</heading-three>
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-three>RouteNote Brochure Site</heading-three>
 
-                <PrimaryBodyCopy class="mt-4"></PrimaryBodyCopy>
-            </div>
-            <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
-        </div>
+            <PrimaryBodyCopy class="mt-4">
+                A site advertising RouteNote's features, partnered businesses, and ethos; it is intended
+                for audiences new to RouteNote so they may appraise its utility as a service before signing
+                on with them. The previous brochure site had been intended for desktop-only, but I was brought 
+                in to make it fully responsive and up-to-date with the latest brand guidelines.
+                <br />
+                <br />
+                The site has over 40 pages, many of which are SEO-friendly to increase traffic, and includes bespoke 
+                in-browser animations and statistical tables to aid with communicating the RouteNote brand to new customers.
+                While I was initially given guidance by a supervising developer, I soon became the sole developer responsible 
+                for maintaining and updating the front-end, and co-ordinating with the out-of-house team who run the site's 
+                servers.
+                <br />
+                <br />
+                I then collaborated with RouteNote Asia, based in Seoul, to create a Korean-localised version of the brochure website. 
+                This site was not only written in Korean, but contained information specific to a Korean-speaking audience and used 
+                styles unique to the Korean site to complement the way that the language is written and read on the web.                
+            </PrimaryBodyCopy>
 
-        <div data-aos="fade-up" data-aos-delay="200" data-aos-once
-            class="sm:relative w-full max-w-5xl flex flex-col items-center sm:px-8 sm:py-6 sm:rounded-lg sm:shadow-inner sm:dark:shadow-blue-opacity-16 sm:rounded-lg mt-6">
-            <div class="w-full flex flex-col items-center">
-                <heading-three>Colour Blindness Corrector & Colour Blindness Simulator</heading-three>
 
-                <PrimaryBodyCopy class="mt-4"></PrimaryBodyCopy>
-            </div>
-            <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
-        </div>
+            <Carousel class="mt-6" :cards-prop="routenote"></Carousel>
+
+            <primary-body-copy class="mt-4">
+                Links to the brochure sites in English and Korean, including both the current versions of the sites and the archived 
+                versions from when I worked at RouteNote:
+                <br />
+                <text-link href="https://routenote.com/" target="_blank" class="mt-2">
+                    Current Brochure Site (English)
+                </text-link>
+                <br />
+                <text-link href="https://web.archive.org/web/20240202173312/https://routenote.com/" target="_blank" class="mt-2">
+                    Archived Brochure Site (English)
+                </text-link>
+                <br />
+                <text-link href="https://routenote.com/kr" target="_blank" class="mt-2">
+                    Current Brochure Site (Korean)
+                </text-link>
+                <br />
+                <text-link href="https://web.archive.org/web/20231106190711/https://routenote.com/kr/" target="_blank" class="mt-2">
+                    Archived Brochure Site (Korean)
+                </text-link>
+            </primary-body-copy>
+
+            <PrimaryBodyCopy class="w-full mt-4">
+                Front-end tech stack: Vue.js 2, SASS, Tailwind CSS, Laravel, Webpack, Alpine.js
+            </PrimaryBodyCopy>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-three>Colour Blindness Corrector</heading-three>
+
+            <PrimaryBodyCopy class="mt-4">
+                A Google Chrome extension I created for my third-year dissertation at Truro and Penwith College. 
+                CB Corrector “rotates” the colours on webpages to colour-blind friendly colours, and also provides 
+                a filter to reduce glare for the totally colour-blind. 
+            </PrimaryBodyCopy>
+
+            <Carousel class="mt-6" :cards-prop="cbCorrector"></Carousel>
+
+            <PrimaryBodyCopy class="w-full mt-4">
+                Front-end tech stack: HTML, CSS, JavaScript
+            </PrimaryBodyCopy>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-three>Colour Blindness Simulator</heading-three>
+
+            <PrimaryBodyCopy class="mt-4">
+                A Google Chrome extension I created for my third-year dissertation at Truro and Penwith College. 
+                CB Simulator uses SVG’s colour matrices to alter the colours on web pages to simulate colour-blindness. 
+                It has both a default and advanced view.
+            </PrimaryBodyCopy>
+
+            <Carousel class="mt-6" :cards-prop="cbSimulator"></Carousel>
+
+            <PrimaryBodyCopy class="w-full mt-4">
+                Front-end tech stack: HTML, CSS, JavaScript
+            </PrimaryBodyCopy>
+        </primary-card>
     </div>
 </template>
 
@@ -69,12 +132,35 @@ import HeadingThree from "../components/TypeScale/HeadingThree.vue"
 import HeadingFive from "../components/TypeScale/HeadingFive.vue"
 import HeadingSix from "../components/TypeScale/HeadingSix.vue"
 import PrimaryBodyCopy from '../components/TypeScale/PrimaryBodyCopy.vue'
+import TextLink from "../components/Buttons/TextLink.vue"
 import Carousel from "../components/Navigation/Carousel.vue"
 
 const vanellus = [
-    "/vanellus-2D-navier-stokes-demo-3.png?url",
     "/vanellus-2D-navier-stokes-demo-1.PNG?url",
-    "/vanellus-2D-navier-stokes-demo-2.png?url"
+    "/vanellus-2D-navier-stokes-demo-2.png?url",
+    "/vanellus-2D-navier-stokes-demo-3.png?url",
+]
+
+const routenote = [
+    "/routenote-brochure-1.PNG?url",
+    "/routenote-brochure-2.png?url",
+    "/routenote-brochure-3.png?url",
+    "/routenote-brochure-4.png?url"
+]
+
+const cbCorrector = [
+    "/cb corrector screenshot 1.png",
+    "/cb corrector screenshot 2.png",
+    "/cb corrector screenshot 3.png"
+]
+
+const cbSimulator = [
+    "/cb simulator screenshot 1.png",
+    "/cb simulator screenshot 2.png",
+    "/cb simulator screenshot 3.png",
+    "/cb simulator screenshot 6.png",
+    "/cb simulator screenshot 8.png",
+    "/cb simulator screenshot 11.png"
 ]
 
 AOS.init()

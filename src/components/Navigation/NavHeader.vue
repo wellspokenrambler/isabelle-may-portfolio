@@ -31,7 +31,7 @@
     </div>
 
     <div class="mobile-menu" :class="menu ? 'mobile-menu-open' : 'mobile-menu-closed'">
-      <nav-menu class="md:hidden mt-4 md:mt-0 md:ml-8"></nav-menu>
+      <nav-menu class="md:hidden mt-4 md:mt-0 md:ml-8" @click="menu = false"></nav-menu>
     </div>
   </header>
 </template>

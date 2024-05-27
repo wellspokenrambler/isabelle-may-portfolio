@@ -1,17 +1,20 @@
 <template>
-  <li>
-    <router-link
-        :to="routeConfig"
-        aria-current-value="page"
+    <a
+        :href="href"
+        :target="target"
         class="font-inconsolata text-base font-bold text-center text-white hover:text-blue active:text-blue-dark-20 underline decoration-2 underline-offset-4 transition duration-200">
-      {{ name }}
-    </router-link>
-  </li>
+        <slot></slot>
+    </a>
 </template>
 
 <script setup>
 const props = defineProps({
-  routeConfig: String,
-  name: String
+    href: String,
+    target: {
+        type: String,
+        default: ""
+    }
 })
 </script>
+
+
