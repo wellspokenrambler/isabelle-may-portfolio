@@ -1,6 +1,6 @@
 <template>
     <div class="w-full flex flex-col justify-start items-center">
-        <primary-card data-aos="fade-up" data-aos-once>
+        <primary-card data-aos="fade-down" data-aos-once>
             <heading-one>
                 Isabelle May - Front-End Web Developer
             </heading-one>
@@ -266,13 +266,13 @@
         <span class="w-full mt-6 h-32 md:hidden"></span>
         <div
             class="fixed bottom-8 inset-x-0 flex justify-center md:justify-end items-center transition duration-100 md:px-8">
-                <a href="/Isabelle May CV 2024.pdf" target="_blank"
-                    class="z-10 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple text-white w-24 h-24 rounded-full flex flex-col justify-center items-center transition duration-100 hover:-translate-y-1">
-                    <heading-four>
-                        PDF
-                    </heading-four>
-                    <downloadIcon width="24" height="24" color="#FFFFFF" :fill="false" />
-                </a>
+            <a href="/Isabelle May CV 2024.pdf" target="_blank"
+                class="z-10 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple text-white w-24 h-24 rounded-full flex flex-col justify-center items-center transition duration-100 hover:-translate-y-1">
+                <heading-four>
+                    PDF
+                </heading-four>
+                <downloadIcon width="24" height="24" color="#FFFFFF" :fill="false" />
+            </a>
         </div>
     </div>
 </template>

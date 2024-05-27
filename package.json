@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dartmoon/aos-responsive": "^1.0.1",
     "@emailjs/browser": "^4.3.3",
     "@unhead/vue": "^1.9.4",
+    "@vueuse/core": "^10.9.0",
     "@yzfe/svgicon": "^1.2.2",
     "@yzfe/vue-svgicon": "^5.0.3",
     "aos": "^2.3.4",
@@ -18,7 +20,8 @@
     "vite-plugin-vue-devtools": "^7.0.25",
     "vue": "^3.4.21",
     "vue-recaptcha": "^3.0.0-alpha.6",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-touch-events": "^4.1.8"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

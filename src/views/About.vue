@@ -1,15 +1,15 @@
 <template>
     <div class="w-full flex flex-col justify-start items-center">
-        <primary-card data-aos="fade-up" data-aos-once>
+        <primary-card data-aos="fade-down" data-aos-once>
             <heading-two>
-                    About
-                </heading-two>
+                About
+            </heading-two>
         </primary-card>
 
-        
+
         <div class="w-full max-w-5xl flex flex-col-reverse lg:flex-row lg:justify-between items-between mt-6">
-            <div data-aos="fade-up" data-aos-delay="100" data-aos-once
-                class="sm:relative w-full sm:w-auto flex flex-col items-center sm:px-8 sm:py-6 sm:rounded-lg sm:shadow-inner sm:dark:shadow-blue-opacity-16 sm:rounded-lg">
+            <div data-aos="fade-up" data-aos-once
+                class="mt-6 md:mt-0 relative w-full md:w-auto flex flex-col items-center px-8 py-6 sm:rounded-lg shadow-inner dark:shadow-blue-opacity-16 rounded-lg">
                 <div class="w-full flex flex-col items-center">
                     <Primary-Body-Copy>
                         Isabelle May grew up in Cornwall and has been analytically inclined from a young age. After
@@ -29,8 +29,8 @@
                 </div>
                 <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
             </div>
-            <div data-aos="fade-up" data-aos-delay="200" data-aos-once
-                class="sm:relative flex flex-col justify-center items-center sm:px-8 sm:py-6 sm:rounded-lg sm:shadow-inner sm:dark:shadow-blue-opacity-16 sm:rounded-lg ml-4">
+            <div data-aos="fade-up" data-aos-once
+                class="relative flex flex-col justify-center items-center px-8 py-6 rounded-lg shadow-inner dark:shadow-blue-opacity-16 rounded-lg md:ml-4">
                 <div class="w-full rounded-lg overflow-hidden">
                     <img src="/isabelle-may-formal.JPG?url">
                 </div>
@@ -41,12 +41,13 @@
 </template>
 
 <script setup>
-import AOS from "aos"
+import AOS from 'aos'
+
+AOS.init()
 
 import PrimaryBodyCopy from '../components/TypeScale/PrimaryBodyCopy.vue'
 import HeadingTwo from '../components/TypeScale/HeadingTwo.vue'
-
-AOS.init()
+import PrimaryCard from '../components/Cards/PrimaryCard.vue'
 </script>
 
 <style scoped lang="scss"></style>
