@@ -690,7 +690,7 @@
     position: absolute;
     right: 0;
     top: 20px;
-    bottom: 260px;
+    bottom: 121px;
     width: 6px;
     background: #8edffd;
 }
