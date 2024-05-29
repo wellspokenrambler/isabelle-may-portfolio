@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative w-full max-w-5xl flex flex-col items-center px-4 md:px-8 py-3 md:py-6 rounded-lg shadow-inner dark:shadow-blue-opacity-16 rounded-lg">
+        class="relative w-full max-w-5xl flex flex-col items-center px-4 md:px-8 py-3 md:py-6 shadow-inner dark:shadow-blue-opacity-16 rounded-lg overflow-hidden">
         <div class="w-full flex flex-col items-center z-10">
             <slot></slot>
         </div>

@@ -7,35 +7,28 @@
         </primary-card>
 
 
-        <div class="w-full max-w-5xl flex flex-col-reverse lg:flex-row lg:justify-between items-between mt-6">
-            <div data-aos="fade-up" data-aos-once
-                class="mt-6 md:mt-0 relative w-full md:w-auto flex flex-col items-center px-8 py-6 sm:rounded-lg shadow-inner dark:shadow-blue-opacity-16 rounded-lg">
-                <div class="w-full flex flex-col items-center">
-                    <Primary-Body-Copy>
-                        Isabelle May grew up in Cornwall and has been analytically inclined from a young age. After
-                        completing a degree in Physics with Astrophysics, she discovered an interest in computer
-                        programming afterwards - and with that newfound passion, gained a 1st-class degree in Applied
-                        Computing Technologies.
-                        <br />
-                        <br />
-                        She now has 4.5+ years of experience in front-end web development and possesses a keen interest
-                        in how websites can be both functional and user-friendly, while also pushing the limits with
-                        aesthetic presentation. Isabelle is also passionate about web accessibility.
-                        <br />
-                        <br />
-                        Outside of development work she enjoys jogging and exercising, drawing and painting, and
-                        wildlife photography.
-                    </Primary-Body-Copy>
-                </div>
-                <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
-            </div>
-            <div data-aos="fade-up" data-aos-once
-                class="relative flex flex-col justify-center items-center px-8 py-6 rounded-lg shadow-inner dark:shadow-blue-opacity-16 rounded-lg md:ml-4">
-                <div class="w-full rounded-lg overflow-hidden">
-                    <img src="/isabelle-may-formal.JPG?url">
-                </div>
-                <div class="absolute inset-0 bg-blue opacity-5 pointer-events-none"></div>
-            </div>
+        <div data-aos="fade-up" data-aos-once class="w-full max-w-5xl flex flex-col-reverse lg:flex-row lg:justify-between items-between mt-6">
+            <primary-card class="mt-6 lg:mt-0 lg:mr-6">
+                <Primary-Body-Copy>
+                    Isabelle May grew up in Cornwall and has been analytically inclined from a young age. After
+                    completing a degree in Physics with Astrophysics, she discovered an interest in computer
+                    programming afterwards - and with that newfound passion, gained a 1st-class degree in Applied
+                    Computing Technologies.
+                    <br />
+                    <br />
+                    She now has 4.5+ years of experience in front-end web development and possesses a keen interest
+                    in how websites can be both functional and user-friendly, while also pushing the limits with
+                    aesthetic presentation. Isabelle is also passionate about web accessibility.
+                    <br />
+                    <br />
+                    Outside of development work she enjoys jogging and exercising, drawing and painting, and
+                    wildlife photography.
+                </Primary-Body-Copy>
+            </primary-card>
+
+            <primary-card>
+                <img src="/isabelle-may-formal.JPG?url">
+            </primary-card>
         </div>
     </div>
 </template>

@@ -55,7 +55,18 @@ function handleAnimation() {
     }, 3000)
 }
 
+function checkSessionStorage() {
+    if(sessionStorage.getItem("key", "returning")) {
+        welcomeAnimation.value = false
+    }
+
+    else {
+        handleAnimation()
+        sessionStorage.setItem("key", "returning")
+    }
+}
+
 onMounted(() => {
-    handleAnimation()
+    checkSessionStorage()
 })
 </script>

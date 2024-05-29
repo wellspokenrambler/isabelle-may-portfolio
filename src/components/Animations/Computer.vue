@@ -13,7 +13,7 @@
             <rect x="211.5" y="235" fill="#92D9F8" width="77.001" height="79" />
             <path fill="#92D9F8" d="M343.001,334.385c0,2.549-5.373,4.615-12,4.615H169c-6.627,0-12-2.066-12-4.615v-15.77
 	c0-2.549,5.373-4.615,12-4.615h162.001c6.627,0,12,2.066,12,4.615V334.385z" />
-            <polygon id="play-button" fill="none" stroke="#FFFFFF" stroke-width="5"
+            <polygon id="play-button" fill="none" stroke="#8edffd" stroke-width="5"
                 points="411.86,207.03 412.103,177.161 437.85,192.306 " />
             <g id="cursor">
                 <polygon fill="#FFFFFF" points="469.007,213.792 458.152,223.281 449.861,202.844 " />
