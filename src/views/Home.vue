@@ -1,6 +1,8 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
-        <primary-card data-aos="fade-down" data-aos-once>
+        <computer v-if="welcomeAnimation" />
+        
+        <primary-card v-if="!welcomeAnimation" data-aos="fade-down" data-aos-once >
             <heading-one>
                 Isabelle May
             </heading-one>
@@ -9,7 +11,7 @@
             </heading-one>
         </primary-card>
 
-        <primary-card data-aos="fade-up" data-aos-once class="mt-6">
+        <primary-card v-if="!welcomeAnimation" data-aos="fade-up" data-aos-once class="mt-6">
             <primary-body-copy class="mt-4">
                 Navigation:
             </primary-body-copy>
@@ -34,13 +36,26 @@
 </template>
 
 <script setup>
+import {ref, onMounted} from "vue"
 import AOS from "aos"
 AOS.init()
 
+import Computer from "../components/Animations/Computer.vue";
+
 import PrimaryCard from "../components/Cards/PrimaryCard.vue"
 import HeadingOne from "../components/TypeScale/HeadingOne.vue";
-import HeadingTwo from '../components/TypeScale/HeadingTwo.vue';
-import HeadingThree from "../components/TypeScale/HeadingThree.vue";
 import PrimaryBodyCopy from "../components/TypeScale/PrimaryBodyCopy.vue";
 import TextLink from "../components/Buttons/TextLink.vue"
+
+let welcomeAnimation = ref(true)
+
+function handleAnimation() {
+    setTimeout(() => {
+        welcomeAnimation.value = false
+    }, 3000)
+}
+
+onMounted(() => {
+    handleAnimation()
+})
 </script>
