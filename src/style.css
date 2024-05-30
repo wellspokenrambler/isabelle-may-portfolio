@@ -11,3 +11,21 @@
     display: none;
 }
 
+@media(prefers-reduced-motion:reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0s !important;
+    }
+
+    [data-aos] {
+        pointer-events: auto !important;
+    }
+
+    html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+        opacity: 1 !important;
+    }
+
+    html:not(.no-js) [data-aos=fade-up], html:not(.no-js) [data-aos=fade-down] {
+        transform: none !important;
+    }
+}

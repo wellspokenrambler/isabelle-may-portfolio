@@ -7,7 +7,7 @@
                 <div v-for="(card, index) in cards" :key="index"
                     class="inline-flex justify-center items-center flex-shrink-0 pointer-events-none select-none"
                     :class="{ 'mx-4': index != 0 || index != (cards.length - 1) }">
-                    <img class="w-full w-full rounded-lg overflow-hidden shadow dark:shadow-none" :src="card">
+                    <img class="w-full rounded-lg overflow-hidden shadow dark:shadow-none" :src="card">
                 </div>
             </div>
             <div class="absolute w-full top-1/2 flex justify-between px-6">
@@ -21,6 +21,22 @@
                     <arrowRightIcon width="24" height="24" color="#FFFFFF" :fill="false"></arrowRightIcon>
                 </button>
             </div>
+
+            <div class="w-full flex justify-center items-center mt-2">
+                <div v-for="(card, index) in cardsProp" :key="index"
+                    class="inline-flex rounded-full overflow-hidden justify-center items-center flex-shrink-0 pointer-events-none select-none"
+                    :class="{ 'mx-1': index != 0 || index != (cards.length - 1) }">
+                    <img 
+                        class="w-6 h-6 shadow dark:shadow-none" 
+                        :class="{'opacity-50' : index != currentCard }" 
+                        :src="card"
+                        >
+                </div>
+            </div>
+
+            <SecondaryBodyCopy class="mt-2 text-center">
+                {{ currentCard + 1 }} of {{ totalCards }}
+            </SecondaryBodyCopy>
         </div>
     </div>
 </template>
@@ -32,6 +48,7 @@ import { useResizeObserver } from '@vueuse/core'
 
 import arrowLeftIcon from "../../assets/svg/arrow-left.svg"
 import arrowRightIcon from "../../assets/svg/arrow-right.svg"
+import SecondaryBodyCopy from "../TypeScale/SecondaryBodyCopy.vue"
 
 const props = defineProps({
     cardsProp: Array
@@ -42,7 +59,8 @@ let carouselWidth = ref(null)
 let cardsWidth = ref(null)
 
 let inner = ref(null)
-let cards = reactive(props.cardsProp)
+let cards = reactive([...props.cardsProp])
+let currentCard = ref(0)
 
 const totalCards = cards.length
 
@@ -53,6 +71,10 @@ useResizeObserver(carousel, (entries) => {
 })
 
 function prev() {
+    currentCard.value--
+    if(currentCard.value < 0) {
+        currentCard.value = totalCards - 1
+    }
     const card = cards.pop()
     cards.unshift(card)
     inner.value.style.transform = `translateX(-${carouselWidth.value}px)`
@@ -65,6 +87,10 @@ function prev() {
 }
 
 function next() {
+    currentCard.value++
+    if(currentCard.value >= totalCards) {
+        currentCard.value = 0
+    }
     inner.value.style.transform = `translateX(-${carouselWidth.value}px)`
     inner.value.style.transition = `0.2s ease`
     setTimeout(() => {

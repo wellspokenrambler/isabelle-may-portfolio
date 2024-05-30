@@ -48,6 +48,7 @@ import PrimaryBodyCopy from "../components/TypeScale/PrimaryBodyCopy.vue";
 import TextLink from "../components/Buttons/TextLink.vue"
 
 let welcomeAnimation = ref(true)
+const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
 function handleAnimation() {
     setTimeout(() => {
@@ -60,7 +61,11 @@ function checkSessionStorage() {
         welcomeAnimation.value = false
     }
 
-    else {
+    else if (isReduced) {
+        welcomeAnimation.value = false
+    }
+
+    else  {
         handleAnimation()
         sessionStorage.setItem("key", "returning")
     }

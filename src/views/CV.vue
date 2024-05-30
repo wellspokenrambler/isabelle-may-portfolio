@@ -4,9 +4,18 @@
             <heading-one>
                 Isabelle May - Front-End Web Developer
             </heading-one>
-            <heading-one class="mt-4">
+            <heading-one class="mt-6">
                 Curriculum Vitae
             </heading-one>
+
+            <a class="mt-4" href="/Isabelle May CV 2024.pdf?URL" target="_blank">
+                <primary-button class="flex justify-center items-center">
+                    <span class="mt-px">
+                        Download PDF
+                    </span>
+                    <downloadIcon class="inline ml-2" width="24" height="24" color="#FFFFFF" :fill="false" />
+                </primary-button>
+            </a>
         </primary-card>
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
@@ -14,9 +23,9 @@
                 About Me
             </heading-two>
             <PrimaryBodyCopy class="mt-4">
-                I am self-driven individual with over 4 years of experience in the field and a keen interest in how
+                I am a self-driven individual with over 4 years of experience in the field and a keen interest in how
                 websites can be both functional and user-friendly while maintaining a strong aesthetic
-                presentation. I am also looking to expand my skills into full-stack development or to progress into
+                presentation. I am looking for a permanent role to expand my skills into full-stack development or to progress into
                 a senior front-end role.
             </PrimaryBodyCopy>
         </primary-card>
@@ -71,7 +80,7 @@
             </heading-four>
 
             <PrimaryBodyCopy class="mt-4">
-                With the pages of a new User Portal being built by an out-ofhouse team in India, I was tasked with
+                With the pages of a new User Portal being built by an out-of-house team in India, I was tasked with
                 creating a functioning component library for them to build pages from. Components varied from
                 buttons & links through form fields & menus up to containing frames – all built to receive and
                 transmit information needed by the India team.
@@ -262,18 +271,6 @@
 
             </PrimaryBodyCopy>
         </primary-card>
-
-        <span class="w-full mt-6 h-32 md:hidden"></span>
-        <div
-            class="fixed bottom-8 inset-x-0 flex justify-center md:justify-end items-center transition duration-100 md:px-8">
-            <a href="/Isabelle May CV 2024.pdf" target="_blank"
-                class="z-10 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple text-white w-24 h-24 rounded-full flex flex-col justify-center items-center transition duration-100 hover:-translate-y-1">
-                <heading-four>
-                    PDF
-                </heading-four>
-                <downloadIcon width="24" height="24" color="#FFFFFF" :fill="false" />
-            </a>
-        </div>
     </div>
 </template>
 
@@ -281,6 +278,8 @@
 import AOS from "aos"
 
 import PrimaryCard from "../components/Cards/PrimaryCard.vue"
+
+import PrimaryButton from "../components/Buttons/PrimaryButton.vue"
 
 import PrimaryBodyCopy from '../components/TypeScale/PrimaryBodyCopy.vue'
 import HeadingOne from "../components/TypeScale/HeadingOne.vue";
