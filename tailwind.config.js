@@ -6,6 +6,7 @@ export default {
   ],
   options: {
   },
+  darkMode: 'selector',
   theme: {
     extend: {
       colors: {

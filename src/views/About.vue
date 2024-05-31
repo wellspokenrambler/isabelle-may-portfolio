@@ -12,7 +12,7 @@
                 <Primary-Body-Copy>
                     Isabelle May grew up in Cornwall and has been analytically inclined from a young age. After
                     completing a degree in Physics with Astrophysics, she discovered an interest in computer
-                    programming afterwards - and with that newfound passion, gained a 1st-class degree in Applied
+                    programming - and with that newfound passion, gained a 1st-class degree in Applied
                     Computing Technologies.
                     <br />
                     <br />
