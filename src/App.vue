@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-header></nav-header>
-    <button class="dark-toggle z-50 md:z-0 fixed top-8 md:top-28 md:right-6 md:w-8 md:h-8 bg-gray-950 dark:bg-white rounded-full transition duration-200 flex justify-center items-center shadow-none hover:shadow-2xl shadow-gray-950 dark:shadow-white" @click="toggleDark()">
+    <button title="toggle dark mode" class="dark-toggle z-50 md:z-0 fixed top-8 md:top-28 md:right-6 md:w-8 md:h-8 bg-gray-950 dark:bg-white rounded-full transition duration-200 flex justify-center items-center shadow-none hover:shadow-2xl shadow-gray-950 dark:shadow-white" @click="toggleDark()">
       <sunIcon v-show="isDark" width="24" height="24" color="#000000" :fill="false" />
       <moonIcon v-show="!isDark" width="24" height="24" color="#FFFFFF" :fill="false" />
     </button>

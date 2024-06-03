@@ -8,8 +8,8 @@
                 Curriculum Vitae
             </heading-one>
 
-            <a class="mt-4" href="/Isabelle May CV 2024.pdf?URL" target="_blank">
-                <primary-button class="flex justify-center items-center">
+            <a title="Download PDF wrapper link" class="mt-4" href="/Isabelle May CV 2024.pdf?URL" target="_blank">
+                <primary-button title="Download PDF button" class="flex justify-center items-center">
                     <span class="mt-px">
                         Download PDF
                     </span>

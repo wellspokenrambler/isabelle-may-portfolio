@@ -29,7 +29,7 @@
                         </div>
 
                         <div class="w-full flex justify-end mt-4">
-                            <primary-button type="submit" value="Send" class="w-fit">
+                            <primary-button title="Submit contact form button" type="submit" value="Send" class="w-fit">
                                 Send
                             </primary-button>
                         </div>
@@ -46,7 +46,7 @@
                         Thank you very much for getting in touch! I shall respond to your message shortly.
                     </Primary-Body-Copy>
 
-                    <primary-button @clicked="router.push('/')" class="w-fit mt-4">
+                    <primary-button title="Home page button" @clicked="router.push('/')" class="w-fit mt-4">
                         Back to home
                     </primary-button>
                 </div>
@@ -64,7 +64,7 @@
                         Sorry about that. Click the button below refresh the contact page and try again.
                     </Primary-Body-Copy>
 
-                    <primary-button @clicked="window.location.reload()" class="w-fit mt-4">
+                    <primary-button title="Refresh page button" @clicked="window.location.reload()" class="w-fit mt-4">
                         Refresh the page
                     </primary-button>
                 </div>

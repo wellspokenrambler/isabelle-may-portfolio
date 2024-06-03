@@ -7,16 +7,16 @@
                 <div v-for="(card, index) in cards" :key="index"
                     class="inline-flex justify-center items-center flex-shrink-0 pointer-events-none select-none"
                     :class="{ 'mx-4': index != 0 || index != (cards.length - 1) }">
-                    <img class="w-full rounded-lg overflow-hidden shadow dark:shadow-none" :src="card">
+                    <img :alt="card" class="w-full rounded-lg overflow-hidden shadow dark:shadow-none" :src="card">
                 </div>
             </div>
             <div class="absolute w-full top-1/2 flex justify-between px-6">
-                <button name="Carousel previous button" @click="prev"
+                <button title="Carousel previous button" @click="prev"
                     class="md:absolute md:-left-12 flex justify-center items-center transition duration-100 z-10 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple text-white w-10 h-10 rounded-full">
                     <arrowLeftIcon width="24" height="24" color="#FFFFFF" :fill="false"></arrowLeftIcon>
                 </button>
 
-                <button name="Carousel next button" @click="next"
+                <button title="Carousel next button" @click="next"
                     class="md:absolute md:-right-12 flex justify-center items-center transition duration-100 z-10 bg-purple-light-20 hover:bg-purple-light-40 active:bg-purple text-white w-10 h-10 rounded-full">
                     <arrowRightIcon width="24" height="24" color="#FFFFFF" :fill="false"></arrowRightIcon>
                 </button>

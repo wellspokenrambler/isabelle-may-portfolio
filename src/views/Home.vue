@@ -1,8 +1,8 @@
 <template>
     <div class="w-full h-full flex flex-col justify-center items-center">
         <computer v-if="welcomeAnimation" />
-        
-        <primary-card v-if="!welcomeAnimation" data-aos="fade-down" data-aos-once >
+
+        <primary-card v-if="!welcomeAnimation" data-aos="fade-down" data-aos-once>
             <heading-one>
                 Isabelle May
             </heading-one>
@@ -15,28 +15,28 @@
             <primary-body-copy class="mt-4">
                 Navigation:
             </primary-body-copy>
-            
+
             <text-link href="/about" class="mt-2">
-                    About me
-                </text-link>
+                About me
+            </text-link>
 
-                <text-link href="/examples" class="mt-2">
-                    Past examples of my work
-                </text-link>
+            <text-link href="/portfolio" class="mt-2">
+                Portfolio of my work
+            </text-link>
 
-                <text-link href="/cv" class="mt-2">
-                    Curriculum Vitae
-                </text-link>
+            <text-link href="/cv" class="mt-2">
+                Curriculum Vitae
+            </text-link>
 
-                <text-link href="/contact" class="mt-2">
-                    Contact form
-                </text-link>
+            <text-link href="/contact" class="mt-2">
+                Contact form
+            </text-link>
         </primary-card>
     </div>
 </template>
 
 <script setup>
-import {ref, onMounted} from "vue"
+import { ref, onMounted } from "vue"
 import AOS from "aos"
 AOS.init()
 
@@ -57,7 +57,7 @@ function handleAnimation() {
 }
 
 function checkSessionStorage() {
-    if(sessionStorage.getItem("key", "returning")) {
+    if (sessionStorage.getItem("key", "returning")) {
         welcomeAnimation.value = false
     }
 
@@ -65,7 +65,7 @@ function checkSessionStorage() {
         welcomeAnimation.value = false
     }
 
-    else  {
+    else {
         handleAnimation()
         sessionStorage.setItem("key", "returning")
     }

@@ -27,7 +27,7 @@
             </primary-card>
 
             <primary-card>
-                <img src="/isabelle-may-formal.JPG?url">
+                <img alt="A photograph of Isabelle May." src="/isabelle-may-formal.JPG?url">
             </primary-card>
         </div>
     </div>
