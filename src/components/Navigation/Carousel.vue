@@ -27,6 +27,7 @@
                     class="inline-flex rounded-full overflow-hidden justify-center items-center flex-shrink-0 pointer-events-none select-none bg-black"
                     :class="{ 'mx-1': index != 0 || index != (cards.length - 1) }">
                     <img 
+                        :alt="card"
                         class="w-6 h-6 shadow dark:shadow-none" 
                         :class="{'opacity-50' : index != currentCard }" 
                         :src="card"
