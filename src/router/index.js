@@ -11,7 +11,7 @@ import CV from "../views/CV.vue"
 const routes = [
   { path: "/", name: "Home", component: Home },
   { path: "/about", name: "About", component: About },
-  { path: "/examples", name: "Portfolio", component: Portfolio },
+  { path: "/portfolio", name: "Portfolio", component: Portfolio },
   { path: "/cv", name: "CV", component: CV},
   { path: "/contact", name: "Contact", component: Contact }
 ];
