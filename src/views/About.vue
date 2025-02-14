@@ -16,13 +16,12 @@
                     Computing Technologies.
                     <br />
                     <br />
-                    She now has 4.5+ years of experience in front-end web development and possesses a keen interest
-                    in how websites can be both functional and user-friendly, while also pushing the limits with
+                    She now has 4.5+ years of experience in front-end web development and possesses a keen interest 
+                    in making creative websites that can be both functional and user-friendly while maintaining a strong 
                     aesthetic presentation. Isabelle is also passionate about web accessibility.
                     <br />
                     <br />
-                    Outside of development work she enjoys jogging and exercising, drawing and painting, and
-                    wildlife photography.
+                    Outside of development work she enjoys exercising, creative arts, and gaming.
                 </Primary-Body-Copy>
             </primary-card>
 

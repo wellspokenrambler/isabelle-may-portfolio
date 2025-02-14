@@ -8,7 +8,7 @@
                 Curriculum Vitae
             </heading-one>
 
-            <a title="Download PDF wrapper link" class="mt-4" href="/Isabelle May CV 2024.pdf?URL" target="_blank">
+            <a title="Download PDF wrapper link" class="mt-4" href="/Isabelle May CV 2025.pdf?URL" target="_blank">
                 <primary-button title="Download PDF button" class="flex justify-center items-center">
                     <span class="mt-px">
                         Download PDF
@@ -23,10 +23,9 @@
                 About Me
             </heading-two>
             <PrimaryBodyCopy class="mt-4">
-                I am a self-driven individual with over 4 years of experience in the field and a keen interest in how
-                websites can be both functional and user-friendly while maintaining a strong aesthetic
-                presentation. I am looking for a permanent role to expand my skills into full-stack development or to progress into
-                a senior front-end role.
+                I am a self-driven individual with over 4 years of experience in the field and a keen interest 
+                in making creative websites that can be both functional and user-friendly while maintaining a strong 
+                aesthetic presentation.
             </PrimaryBodyCopy>
         </primary-card>
 
@@ -34,6 +33,20 @@
             <heading-two>
                 Work Experience
             </heading-two>
+
+            <heading-three class="mt-6">
+                Developer, Ultraframe Ltd
+            </heading-three>
+
+            <heading-five class="mt-2">
+                (August 2024 - Present)
+            </heading-five>
+
+            <PrimaryBodyCopy class="mt-4">
+                Working on a new internal application – both on its client interface and server – 
+                which lets employees view and edit data across multiple schemas, including orders 
+                and transport logistics, with a focus on usability by different personas.
+            </PrimaryBodyCopy>
 
             <heading-three class="mt-6">
                 Front End Developer, Vanellus Technologies Ltd
@@ -44,10 +57,10 @@
             </heading-five>
 
             <PrimaryBodyCopy class="mt-4">
-                A short-term placement with a technology start-up focused on improving computational fluid dynamics
-                software using machine learning. My role was to help them build the basics of a functioning web
-                application to help users configure, run, and analyse fluid simulations on dedicated servers – all
-                contained within a clean UI which conforms to modern development standards and practices.
+                A short-term contract in Cambridge with a novel tech start-up focused on improving 
+                fluid dynamics software using machine learning. Working with a small team that I knew 
+                from my Physics degree, I built as per spec I built a rudimentary web application to 
+                help engineers and scientists configure, run, and analyse fluid simulations.
             </PrimaryBodyCopy>
 
             <heading-three class="mt-6">
@@ -59,8 +72,7 @@
             </heading-five>
 
             <PrimaryBodyCopy class="mt-4">
-                I initially worked as one of many developers, but became the sole in-house developer in July 2021.
-                Below are the projects I worked on during my employment:
+                A music distribution company based in Truro.
             </PrimaryBodyCopy>
 
             <heading-four class="mt-6">
@@ -68,11 +80,10 @@
             </heading-four>
 
             <PrimaryBodyCopy class="mt-4">
-                Updated RouteNote’s brochure to a modern, responsive site with content ranging from simple text to
-                bespoke animations & dynamic tables across dozens of pages. Also localised the new brochure for a
-                Korean audience, with help, text translations, and advice from RouteNote’s branch in Seoul – with
-                unique tweaks to its styles to accommodate the change in language. As of 2023 site gets ~1 million
-                views per month.
+                Updated RouteNote’s brochure to a modern, responsive site with content ranging from 
+                simple text to bespoke animations & dynamic tables across dozens of pages. Also 
+                localised the brochure for a Korean audience, with help, text translations, and 
+                advice from RouteNote’s branch in Seoul.
             </PrimaryBodyCopy>
 
             <heading-four class="mt-6">
@@ -80,10 +91,10 @@
             </heading-four>
 
             <PrimaryBodyCopy class="mt-4">
-                With the pages of a new User Portal being built by an out-of-house team in India, I was tasked with
-                creating a functioning component library for them to build pages from. Components varied from
-                buttons & links through form fields & menus up to containing frames – all built to receive and
-                transmit information needed by the India team.
+                Created a functioning component library for an out-of-house team (based in India) to 
+                build pages from. Components varied from buttons & links through form fields & menus 
+                up to containing frames – all built to receive and transmit information needed by 
+                the other team.
             </PrimaryBodyCopy>
 
             <heading-four class="mt-6">
@@ -139,7 +150,7 @@
             </heading-two>
 
             <heading-four class="mt-6">
-                BSc Applied Computing Technologies, 1st Class
+                BSc Applied Computing Technologies, 1st Class Hons
             </heading-four>
 
             <heading-six class="mt-2">
@@ -147,7 +158,7 @@
             </heading-six>
 
             <heading-four class="mt-4">
-                BSc Physics with Astrophysics, 3rd Class
+                BSc Physics with Astrophysics
             </heading-four>
 
             <heading-six class="mt-2">
@@ -157,7 +168,7 @@
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
             <heading-two>
-                Other Languages
+                Other Languages and Frameworks
             </heading-two>
 
             <heading-three class="mt-6">
@@ -167,7 +178,7 @@
             <ul class="list-disc text-white w-full ml-8 mt-4">
                 <li>
                     <PrimaryBodyCopy>
-                        Alpine, jQuery, d3, DataTables, Wordpress, Laravel, Nuxt
+                        Alpine, jQuery, PrimeVue, ChartJS, d3, DataTables, Wordpress, Laravel, Nuxt, Vite, Parcel, Playwright
                     </PrimaryBodyCopy>
                 </li>
             </ul>
@@ -226,6 +237,12 @@
                         Consideration towards professionalism and ethics
                     </PrimaryBodyCopy>
                 </li>
+
+                <li>
+                    <PrimaryBodyCopy class="mt-4">
+                        Daily practice of kindness
+                    </PrimaryBodyCopy>
+                </li>
             </ul>
         </primary-card>
 
@@ -265,10 +282,10 @@
             </heading-two>
 
             <PrimaryBodyCopy class="mt-4">
-                I enjoy jogging and exercising, drawing and painting, wildlife photography - I also run and host a
-                Twitch stream twice a week (for which I designed all its assets and composed a short music instrumental
-                to play during breaks).
-
+                I enjoy exercising, creative arts, and gaming - I also ran and 
+                hosted a Twitch stream twice a week (for which I designed all 
+                its assets and composed a short music instrumental to play 
+                during breaks).
             </PrimaryBodyCopy>
         </primary-card>
     </div>
