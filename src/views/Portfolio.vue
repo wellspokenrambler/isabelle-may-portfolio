@@ -7,6 +7,39 @@
         </primary-card>
 
         <primary-card data-aos="fade-up" data-aos-once class="mt-8">
+            <heading-three>Ultraframe "Paradigm" Internal UI</heading-three>
+
+            <PrimaryBodyCopy class="mt-4">
+                A new internal browser application which lets employees view and edit data across multiple schemas, including 
+                orders, customers, and transport logistics, with a focus on usability by different personas. This site is
+                intended to replace a number software applications which have become hard to maintain by combining their 
+                different functionalities into one place which anyone in the company can access and use.
+                <br />
+                <br />
+                I was mainly responsible for the client side of this project, though I did also help debug the server and write 
+                routes to callback functions on the server for the client to access. During my time on this project I: created a 
+                number of new pages, including a search page with unique elements for each kind of result; updated our PrimeVue 
+                component library version from 3 to 4 and used this opportunity to bake as much bespoke styling into our theme 
+                preset as possible; and built a universal "list" component to handle large tables of data and filters.
+                <br />
+                <br />
+                This application was not required to be made with responsive web design practices, as the company intended to display 
+                the site on desktop computers only. 
+            </PrimaryBodyCopy>
+
+
+            <Carousel class="mt-6" :cards-prop="ultraframe"></Carousel>
+
+            <PrimaryBodyCopy class="w-full mt-4">
+                Front-end tech stack: Vue.js 3, PrimeVue, Chart.js, Parcel
+                <br />
+                Back end: JavaScript, SQL
+                <br />
+                Testing: JavaScript, Playwright
+            </PrimaryBodyCopy>
+        </primary-card>
+
+        <primary-card data-aos="fade-up" data-aos-once class="mt-8">
             <heading-three>RouteNote Brochure Site</heading-three>
 
             <PrimaryBodyCopy class="mt-4">
@@ -139,6 +172,26 @@ const routenote = [
     "/routenote-brochure-2.png?url",
     "/routenote-brochure-3.png?url",
     "/routenote-brochure-4.png?url"
+]
+
+const ultraframe = [
+    "/ultraframe 1.png",
+    "/ultraframe 2.png",
+    "/ultraframe 3.png",
+    "/ultraframe 4.png",
+    "/ultraframe 5.png",
+    "/ultraframe 7.png",
+    "/ultraframe 8.png",
+    "/ultraframe 9.png",
+    "/ultraframe 10.png",
+    "/ultraframe 11.png",
+    "/ultraframe 12.png",
+    "/ultraframe 13.png",
+    "/ultraframe 14.png",
+    "/ultraframe 15.png",
+    "/ultraframe 16.png",
+    "/ultraframe 17.png",
+    "/ultraframe 18.png"
 ]
 
 const cbCorrectorSimulator = [
