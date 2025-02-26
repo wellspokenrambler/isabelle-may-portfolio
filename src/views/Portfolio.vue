@@ -175,11 +175,11 @@ const routenote = [
 ]
 
 const ultraframe = [
+    "/ultraframe 1.png",
     "/ultraframe 2.png",
-    "/ultraframe 9.png",
-    "/ultraframe 11.png",
-    "/ultraframe 13.png",
-    "/ultraframe 16.png",
+    "/ultraframe 3.png",
+    "/ultraframe 4.png",
+    "/ultraframe 5.png",
 ]
 
 const cbCorrectorSimulator = [
