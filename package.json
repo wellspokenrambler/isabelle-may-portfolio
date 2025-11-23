@@ -21,7 +21,8 @@
     "vue": "^3.4.21",
     "vue-recaptcha": "^3.0.0-alpha.6",
     "vue-router": "^4.3.0",
-    "vue3-touch-events": "^4.1.8"
+    "vue3-touch-events": "^4.1.8",
+    "wrangler": "^4.50.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
